@@ -23,7 +23,7 @@
 **Workflow:**
 1) data_prep.R
 2) create_scripts.sh
-3) chr#_analysis.R scripts 
+3) chr_analysis.R (one script per chromosome) 
 4) combine_results_chr.sh
 5) annotate_function.R 
 6) remove_QTLs.sh
