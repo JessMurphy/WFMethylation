@@ -3,8 +3,8 @@
 
 | **Filename**		| **Description** |
 |:----------------------|:----------------|
-| index_bed.sh		| Sorts and zips each bed file in a bed_files directory |
-| index_vcf.sh		| Copies the vcf files into a vcf_files directory. It also sorts and zips each vcf file in the directory. |
+| Index_bed.sh		| Sorts and zips each bed file in a bed_files directory |
+| Index_vcf.sh		| Copies the vcf files into a vcf_files directory. It also sorts and zips each vcf file in the directory. |
 | QTL_formatting.R	| Reformats the methylation data into bed format for QTLTools. It uses R data files and map files to output a bed file for each chromosome saved in the bed_files directory. |
 | QTL_pvalues.R		| Counts the number of significant CpG sites per chromosome for several p-value thresholds based on both the nominal and adjusted p-values. It produces a chromosome by threshold table as well as the nominal and adjusted QQplots for each chromosome. |
 | QTL_scripts.sh	| Generates QTL scripts for each chromosome |

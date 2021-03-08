@@ -5,12 +5,12 @@
 |:------------------------------|:----------------|
 | analysis_function.R 		| Performs the phenotype analysis for each birth outcome (LGAZ, WGAZ, HCGAZ, WLGAZ) |
 | annotate_function.R		| Annotates the chromosome results files with overlapping and flanking genes from Gencode |
-| Chr_analysis.R 		| Loads the data and calls the analysis functions |
+| chr_analysis.R 		| Loads the data and calls the analysis functions |
 | combine_results_all.sh	| Removes the header from all of the Chr#_filtered_*.txt files (except Chr1) and concatenates them to produce one large results file for each outcome |
 | combine_results_chr.sh	| Combines the results files to produce one results file per chromosome |
 | create_scripts.sh		| Produces the individual chromosome R and bash scripts for the phenotype analysis |
 | filter_MEs.R			| Subsets ME results from overall results, adds FDR adjusted p-values, and merges restuls with previous ME results |
-| QQplot.R			| Produces the QQplot for the birth outcome results (LGAZ, WGAZ, HCGAZ, and WLGAZ) |				
+| qqplot.R			| Produces the QQplot for the birth outcome results (LGAZ, WGAZ, HCGAZ, and WLGAZ) |				
 | region_data.R			| Subsets the results to the sites within 1,000 bp of the top FDR results (used to make the region plots) |
 | remove_QTLs.sh		| Removes the QTL sites from the results |
 | top_data.R			| Saves the methylation data for the top FDR results |
