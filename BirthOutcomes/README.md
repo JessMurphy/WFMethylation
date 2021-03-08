@@ -20,12 +20,12 @@
 
 **Workflow:**
 1) create_scripts.sh
-2) Chr#_analysis.R scripts 
+2) chr#_analysis.R scripts 
 3) combine_results_chr.sh
 4) annotate_function.R
 5) remove_QTLs.sh
 6) combine_results_all.sh
-7) QQplot.R
+7) qqplot.R
 8) filter_MEs.R
 9) top_hits.R
 10) region_data.R, plot_data.R

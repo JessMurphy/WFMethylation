@@ -23,12 +23,12 @@
 **Workflow:**
 1) data_prep.R
 2) create_scripts.sh
-3) Chr#_analysis.R scripts 
+3) chr#_analysis.R scripts 
 4) combine_results_chr.sh
 5) annotate_function.R 
 6) remove_QTLs.sh
 7) combine_results_all.sh
-8) Int_QQplot.R, NoInt_QQplot.R
+8) int_qqplot.R, noint_qqplot.R
 9) filter_MEs.R
 10) top_hits.R
 11) region_data.R, top_data.R

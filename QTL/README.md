@@ -13,8 +13,8 @@
 
 **Workflow:**
 1) QTL_formatting.R
-2) index_bed.sh
-3) index_vcf.sh
+2) Index_bed.sh
+3) Index_vcf.sh
 4) QTL_scripts.sh
 5) Chr#_QTL.sh 
 6) QTL_pvalues.R (not required)
