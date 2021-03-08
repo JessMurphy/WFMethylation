@@ -1,4 +1,4 @@
-# README 
+# QTL Analysis
 *updated 1/25/2021*
 
 | **Filename**		| **Description** |
