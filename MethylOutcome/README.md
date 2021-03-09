@@ -3,6 +3,7 @@
 
 | **Filename**			| **Description** |
 |:------------------------------|:----------------|
+| combp				| Directory for the comb-p regional analysis |
 | analysis_function.R 		| Performs the methylation analysis with interaction and non-interaction models |
 | annotate_function.R		| Annotates the chromosome results files with overlapping and flanking genes from Gencode |
 | chr_analysis.R 		| Loads the data and calls the analysis functions |

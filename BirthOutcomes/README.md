@@ -3,6 +3,7 @@
 
 | **Filename**			| **Description** |
 |:------------------------------|:----------------|
+| combp				| Directory for the comb-p regional analysis |
 | analysis_function.R 		| Performs the phenotype analysis for each birth outcome (LGAZ, WGAZ, HCGAZ, WLGAZ) |
 | annotate_function.R		| Annotates the chromosome results files with overlapping and flanking genes from Gencode |
 | chr_analysis.R 		| Loads the data and calls the analysis functions |
