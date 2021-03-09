@@ -10,4 +10,3 @@
 1) Prep_data.R until prompted to use Bedtools
 2) Comb_p_script.sh until prompted to return to R and finish editing
 3) Prep_data.R
-**Workflow:**
