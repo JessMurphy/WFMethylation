@@ -1,6 +1,6 @@
 # Methylation Outcome Results
 
-The table below describes the variables in each results file.
+The following table describes the columns in each results file.
 
 | **No.** | **Name** 	| **Description** |
 |:-------:|:------------|:----------------|
