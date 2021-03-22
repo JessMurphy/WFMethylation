@@ -16,20 +16,18 @@
 14. expose.beta		smoke exposure beta coefficient 
 15. PC1.beta		genetic PC1 beta coefficient
 16. NAs			number of samples with NA methylation values at that CpG (excluding outliers)
-17. zeros		number of samples with 0% methylation at that CpG
-18. non.zeros		number of samples with nonzero methylation values at that CpG
-19. ones		number of samples with 100% methylation at that CpG
-20. non.ones		number of samples with non-one methylation values at that CpG
-21. outliers		number of samples considered an outlier at that CpG (> Q3 + 3*IQR or < Q1 - 3*IQR)
-22. diff.miss		pvalue for the calculation of differential missingness
-23. ME			metastable epiallele identifier (. = no, ME = yes)
-24. Chr			chromosome number
-25: pos			chromosome position
-26. genes		genes that directly overlap the CpG
-27. genes_flanking	genes within 5kb of the CpG
-28. gene_type		gene type (Ensembl or HAVANA) of the genes listed in the genes_flanking column
-29. total.NAs		sum of NAs and outliers
-30. methyl.fdr		FDR adjusted p-value for methylation
+17. outliers		number of samples considered an outlier at that CpG (> Q3 + 3*IQR or < Q1 - 3*IQR)
+18. total.NAs		sum of NAs and outliers
+19. zeros		number of samples with 0% methylation at that CpG
+20. non.zeros		number of samples with nonzero methylation values at that CpG
+21. ones		number of samples with 100% methylation at that CpG
+22. non.ones		number of samples with non-one methylation values at that CpG
+23. diff.miss		pvalue for the calculation of differential missingness
+24. ME			metastable epiallele identifier (. = no, ME = yes)
+25. genes		genes that directly overlap the CpG
+26. genes_flanking	genes within 5kb of the CpG
+27. gene_type		gene type (Ensembl or HAVANA) of the genes listed in the genes_flanking column
+28. methyl.fdr		FDR adjusted p-value for methylation
 
 *Note:	total.NAs + zeros + non.zeros = 83 (total samples)
 	total.NAs + ones + non.ones = 83
