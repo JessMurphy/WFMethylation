@@ -14,7 +14,9 @@
 | filter_MEs.R			| Subsets ME results from overall results, adds FDR adjusted p-values, and merges restuls with previous ME results |
 | qqplot.R			| Produces the QQplot for the birth outcome results (LGAZ, WGAZ, HCGAZ, and WLGAZ) |				
 | region_data.R			| Subsets the results to the sites within 1,000 bp of the top FDR results (used to make the region plots) |
+| region_plots.R		| Creates region plots of the beta estimates and p-values of the top results |
 | remove_QTLs.sh		| Removes the QTL sites from the results |
+| scatterplots.R		| Creates scatterplots and methylation boxplots for the top  results |
 | top_data.R			| Saves the methylation data for the top FDR results |
 | top_hits.R			| Filters *_results.txt (non.zeros>=15, total.NAs<=20, non.ones>=15) and adds FDR adjusted p-values. Also saves the top 1,000 results for each outcome. |
 
@@ -31,5 +33,6 @@
 8) filter_MEs.R
 9) top_hits.R
 10) region_data.R, plot_data.R
+11) scatterplots.R, region_plots.R
 12) Prep_data.R, Comb_p_script.sh (located in the combp directory)
 13) combp_sites.sh

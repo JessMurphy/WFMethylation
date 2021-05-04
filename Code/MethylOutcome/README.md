@@ -1,5 +1,5 @@
 # Methylation Outcome Analysis
-*updated 5/3/2021*
+*updated 5/4/2021*
 
 | **Filename**			| **Description** |
 |:------------------------------|:----------------|
@@ -14,8 +14,11 @@
 | data_prep.R			| Performs CpG site quality control for each chromosome (removes sites with <15% nonzero reads and >20% NAs as well as SNPs) and combines the necessary covariates with the methylation data |	
 | filter_MEs.R			| Subsets ME results from overall results, adds FDR adjusted p-values, and merges results with previous ME results |
 | int_qqplot.R			| Produces the QQplot for the interaction model (arm, BMI, & armxBMI interaction p-values) |
+| interaction_plots.R		| Creates interaction plots and methylation boxplots for the top interaction results |
+| means_function.R		| Adds the arm contrasts as well as the trends (interaction model) or marginal means (non-interaction model) to the top results |
 | noint_qqplot.R		| Produces the QQplot for the non-interaction model (arm & BMI p-values) |
 | region_data.R			| Subsets the results to the sites within 1,000 bp of the top FDR results (used to make the region plots) |
+| region_plots.R		| Creates region plots of the beta estimates and p-values for the top results |
 | remove_QTLs.sh		| Removes the QTL sites from the results |
 | top_data.R			| Saves the methylation data for the top FDR and comb-p results (used for emmeans/emtrends) |
 | top_hits.R			| Filters EWAS_results.txt (non.zeros>=15, total.NAs<=20, non.ones>=15) and adds FDR adjusted p-values. Saves the top interaction results with int.fdr <= 0.1 and the top non-interaction results with int.fdr > 0.1 and BMI.p2/arm.p2 < 1E-4. Also saves the top 1,000 results for each term: arm, BMI, armxBMI interaction, arm2, BMI2. |
@@ -34,5 +37,6 @@
 9) filter_MEs.R
 10) top_hits.R
 11) region_data.R, top_data.R
-12) Prep_data.R, Comb_p_script.sh (located in the combp directory)
-13) combp_sites.sh
+12) means_function.R, interaction_plots.R, region_plots.R
+13) Prep_data.R, Comb_p_script.sh (located in the combp directory)
+14) combp_sites.sh
