@@ -1,5 +1,5 @@
 ############################################################
-##  Women First Trial: Guatemala Methylation Analysis         
+##  Women First Trial: Guatemala Methylation Analysis (Methylation Outcome)        
 ##  Written by Jessica Murphy 
 ##  Last edited on January 7, 2021
 ##  This function annotates each chromosome with overlapping & 

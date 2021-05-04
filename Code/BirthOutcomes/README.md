@@ -1,5 +1,5 @@
 # Birth Outcomes Analysis
-*updated 3/2/2021*
+*updated 5/3/2021*
 
 | **Filename**			| **Description** |
 |:------------------------------|:----------------|
@@ -9,6 +9,7 @@
 | chr_analysis.R 		| Loads the data and calls the analysis functions |
 | combine_results_all.sh	| Removes the header from all of the Chr#_filtered_*.txt files (except Chr1) and concatenates them to produce one large results file for each outcome |
 | combine_results_chr.sh	| Combines the results files to produce one results file per chromosome |
+| combp_sites.R			| Subsets the epigenome-wide results to the sites within the top comb-p regions and combines the epigenome-wide results with the comb-p fdr site results |
 | create_scripts.sh		| Produces the individual chromosome R and bash scripts for the phenotype analysis |
 | filter_MEs.R			| Subsets ME results from overall results, adds FDR adjusted p-values, and merges restuls with previous ME results |
 | qqplot.R			| Produces the QQplot for the birth outcome results (LGAZ, WGAZ, HCGAZ, and WLGAZ) |				
@@ -30,3 +31,5 @@
 8) filter_MEs.R
 9) top_hits.R
 10) region_data.R, plot_data.R
+12) Prep_data.R, Comb_p_script.sh (located in the combp directory)
+13) combp_sites.sh

@@ -1,3 +1,13 @@
+############################################################
+##  Women First Trial: Guatemala Methylation Analysis (Birth Outcomes)         
+##  Written by Jessica Murphy 
+##  Last edited on January 23, 2021.
+##  This script filters the results (non.zeros>=15, total.NAs<=20, 
+##  non.ones>=15) and adds FDR adjusted p-values. It also saves the
+##  top 1,000 results for each outcome.
+##  Please send any questions to jessica.murphy@ucdenver.edu
+############################################################
+
 library(dplyr)
 
 setwd("/nfs/storage/math/gross-s2/projects/guatemala/Guatemala-omics/Methylation/BirthOutcomes/results/")
@@ -20,6 +30,7 @@ WGAZ2 = WGAZ %>% filter(non.zeros>=15, total.NAs<=20, non.ones>=15)
 HCGAZ2 = HCGAZ %>% filter(non.zeros>=15, total.NAs<=20, non.ones>=15) 
 WLGAZ2 = WLGAZ %>% filter(non.zeros>=15, total.NAs<=20, non.ones>=15) 
 
+# count how many sites had significant differential missingness
 print(paste0(length(LGAZ2$diff_miss < 0.001), " LGAZ sites with diff.miss p-value < 0.001 after filtering"))
 print(paste0(length(WGAZ2$diff_miss < 0.001), " WGAZ sites with diff.miss p-value < 0.001 after filtering"))
 print(paste0(length(HCGAZ2$diff_miss < 0.001), " HCGAZ sites with diff.miss p-value < 0.001 after filtering"))

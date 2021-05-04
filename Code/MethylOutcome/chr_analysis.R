@@ -1,5 +1,5 @@
 ############################################################
-##  Women First Trial: Guatemala Methylation Analysis         
+##  Women First Trial: Guatemala Methylation Analysis (Methylation Outcome)        
 ##  Written by Jessica Murphy 
 ##  Last edited on August 30, 2020
 ##  This script performs the methylation analysis for chromosome mychrom.

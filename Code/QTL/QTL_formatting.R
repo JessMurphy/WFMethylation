@@ -1,6 +1,11 @@
-
-# This script produces the required phenotype files needed to
-# run QTLTools.
+############################################################
+##  Women First Trial: Guatemala Methylation Analysis (QTL Analysis)         
+##  Written by Jessica Murphy 
+##  Last edited on November 19, 2020.
+##  This script produces the required phenotype files needed 
+##  to run QTLTools.
+##  Please send any questions to jessica.murphy@ucdenver.edu
+############################################################
 
 # The file produced is TAB delimited and each line corresponds to a single 
 # molecular phenotype. 

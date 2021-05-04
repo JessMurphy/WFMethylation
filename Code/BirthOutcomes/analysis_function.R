@@ -1,5 +1,5 @@
 ############################################################
-##  Women First Trial: Guatemala Methylation Analysis         
+##  Women First Trial: Guatemala Methylation Analysis (Birth Outcomes)         
 ##  Written by Jessica Murphy 
 ##  Last edited on December 15, 2020
 ##  This function performs an EWAS for each chromosome based on a 

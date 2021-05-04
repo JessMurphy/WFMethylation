@@ -1,3 +1,12 @@
+############################################################
+##  Women First Trial: Guatemala Methylation Analysis (Methylation Outcome)         
+##  Written by Jessica Murphy 
+##  Last edited on January 19, 2021.
+##  This script subsets the ME results from the overall results,
+##  adds FDR adjusted p-values to the ME results, and merges the
+##  results with previous ME results.
+##  Please send any questions to jessica.murphy@ucdenver.edu
+############################################################
 
 library(dplyr)
 

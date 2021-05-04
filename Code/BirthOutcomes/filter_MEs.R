@@ -1,3 +1,12 @@
+############################################################
+##  Women First Trial: Guatemala Methylation Analysis (Birth Outcomes)         
+##  Written by Jessica Murphy 
+##  Last edited on January 23, 2021.
+##  This script subsets the ME results from the overall results,
+##  adds FDR adjusted p-values to the ME results, and merges the
+##  results with previous ME results.
+##  Please send any questions to jessica.murphy@ucdenver.edu
+############################################################
 
 library(dplyr)
 
@@ -22,7 +31,7 @@ WGAZ_ME$total.NAs = WGAZ_ME$NAs + WGAZ_ME$outliers
 HCGAZ_ME$total.NAs = HCGAZ_ME$NAs + HCGAZ_ME$outliers
 WLGAZ_ME$total.NAs = WLGAZ_ME$NAs + WLGAZ_ME$outliers
 
-# filter the results
+# filter ME results
 LGAZ_ME2 = LGAZ_ME %>% filter(non.zeros>=15, total.NAs<=20, non.ones>=15) 
 WGAZ_ME2 = WGAZ_ME %>% filter(non.zeros>=15, total.NAs<=20, non.ones>=15) 
 HCGAZ_ME2 = HCGAZ_ME %>% filter(non.zeros>=15, total.NAs<=20, non.ones>=15) 

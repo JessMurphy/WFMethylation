@@ -1,5 +1,5 @@
 ############################################################
-##  Women First Trial: Guatemala Methylation Analysis         
+##  Women First Trial: Guatemala Methylation Analysis (Methylation Outcome)         
 ##  Written by Jessica Murphy 
 ##  Last edited on December 10, 2020
 ##  This function performs a methylation analysis for each chromosome. 
