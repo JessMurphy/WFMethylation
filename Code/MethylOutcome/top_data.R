@@ -26,6 +26,7 @@ int.sites = read.table("combp_int_sites.txt", header=T, sep='\t')
 # inputs: results - a dataframe of results 
 #         name - a character string to name the output file
 # output: a tab-separated text file of the data for the top results
+
 top_data <- function(results, name) {
   
   # extract the chromosome numbers from the results file

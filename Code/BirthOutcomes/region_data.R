@@ -23,6 +23,7 @@ top.ME = read.table("ME_results_LGAZ.txt", header=T, sep='\t') %>% filter(methyl
 #         name - a character string to name the output file
 #         outcome - a character string of the specific birth outcome (LGAS, WGAZ, HCGAZ, or WLGAZ)
 # output: a tab-separated text file of the results within 1,000 bp of the top results
+
 region_data <- function(top, outcome, name) {
   
   # extract the chromosome numbers from the results file

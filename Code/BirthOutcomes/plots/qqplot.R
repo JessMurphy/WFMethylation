@@ -2,8 +2,8 @@
 ##  Women First Trial: Guatemala Methylation Analysis (Birth Outcomes)         
 ##  Written by Jessica Murphy 
 ##  Last edited on January 23, 2021.
-##  This script produces the QQplot for the non-interaction model
-##  (arm & BMI p-values).
+##  This script produces a combined QQplot for all four birth
+##  outcome models.
 ##  Please send any questions to jessica.murphy@ucdenver.edu
 ############################################################
 

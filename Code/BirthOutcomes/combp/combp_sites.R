@@ -2,9 +2,8 @@
 ##  Women First Trial: Guatemala Methylation Analysis (Birth Outcomes)         
 ##  Written by Jessica Murphy 
 ##  Last edited on March 29, 2021.
-##  This script subsets the epigenome-wide results to the sites within 
-##  within the top comb-p regions. It also combines the epigenome-wide 
-##  results with the comb-p fdr site results.
+##  This script merges the comb-p FDR single site results with
+##  the comb-p region results.
 ##  Please send any questions to jessica.murphy@ucdenver.edu
 ############################################################
 
@@ -38,6 +37,7 @@ WLGAZ_results = read.table("WLGAZ_results_FDR.txt", header=T, sep='\t')
 #         results - a dataframe of epigenome-wide results
 #         name - a character string to name the output file
 # output: a tab-separated text file of the results within the comb-p regions
+
 region_sites <- function(combp, fdr, results, name) {
   
   # add the header for the region results

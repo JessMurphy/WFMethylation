@@ -12,7 +12,7 @@ library(dplyr)
 
 setwd("/nfs/storage/math/gross-s2/projects/guatemala/Guatemala-omics/Methylation/Megan_August2019/GenomeWide/Data_files/RDA/")
 
-########## FUNCTIONS ##########
+#################### FUNCTIONS ####################
 
 # define function for quality control
 # names: CpG site names
@@ -46,7 +46,7 @@ quality <- function(names, data) {
 }
 
 
-########## DATA ##########
+#################### DATA ####################
 
 # read in covariates
 covs = read.delim("/nfs/storage/math/gross-s2/projects/guatemala/Guatemala-omics/Methylation/CellTypeAdjustment/metadata.txt")

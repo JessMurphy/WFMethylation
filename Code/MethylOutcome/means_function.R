@@ -13,10 +13,11 @@ library(dplyr)
 library(scales) #scientific
 library(emmeans)
 
-#setwd("~/RESEARCH/Methylation/results/EWAS/")
+setwd("~/RESEARCH/Methylation/results/EWAS/")
 
 # define a function to remove outliers
 # https://stackoverflow.com/questions/12866189/calculating-the-outliers-in-r
+
 FindOutliers <- function(data) {
   
   lowerq = quantile(data, na.rm=T)[2]
@@ -30,16 +31,16 @@ FindOutliers <- function(data) {
 }
 
 # read in top results
-ME.results = read.table("ME_results.txt", header=T, sep='\t') #%>% filter(int.fdr<0.1) 
-top.int.fdr = read.table("top_int_fdr.txt", header=T, sep='\t') 
-top.arm2.fdr = read.table("top_arm2_fdr.txt", header=T, sep='\t') %>% filter(arm.fdr2 <= 0.05)
-top.BMI2.fdr = read.table("top_BMI2_fdr.txt", header=T, sep='\t') %>% filter(BMI.fdr2 <= 0.05)
+#ME.results = read.table("ME_results.txt", header=T, sep='\t') #%>% filter(int.fdr<0.1) 
+#top.int.fdr = read.table("top_int_fdr.txt", header=T, sep='\t') 
+#top.arm2.fdr = read.table("top_arm2_fdr.txt", header=T, sep='\t') %>% filter(arm.fdr2 <= 0.05)
+#top.BMI2.fdr = read.table("top_BMI2_fdr.txt", header=T, sep='\t') %>% filter(BMI.fdr2 <= 0.05)
 
 # read in top data
-ME.data = read.table("ME_data.txt", header=T, sep='\t') #%>% select(infant_id:refactor2, ME.results$methyl)
-int.data = read.table("top_int_data.txt", header=T, sep='\t') 
-arm2.data = read.table("top_arm2_data.txt", header=T, sep='\t') 
-BMI2.data = read.table("top_BMI2_data.txt", header=T, sep='\t') 
+#ME.data = read.table("ME_data.txt", header=T, sep='\t') #%>% select(infant_id:refactor2, ME.results$methyl)
+#int.data = read.table("top_int_data.txt", header=T, sep='\t') 
+#arm2.data = read.table("top_arm2_data.txt", header=T, sep='\t') 
+#BMI2.data = read.table("top_BMI2_data.txt", header=T, sep='\t') 
 
 # define merge_means function
 # inputs: results - a dataframe of top results 
@@ -47,6 +48,7 @@ BMI2.data = read.table("top_BMI2_data.txt", header=T, sep='\t')
 #         name - character string of the output file name 
 #         int - interaction term? ("yes" or "no")
 # output: a tab-separated text file of the updated top results with the emmeans/emtrends info
+
 merge_means <- function(results, data, name, int) {
   
   # remove the preterm babies
@@ -155,7 +157,7 @@ merge_means <- function(results, data, name, int) {
 }
 
 # call function
-out.int = merge_means(top.int.fdr, int.data, "top_int_updated", "yes")
-out.arm2 = merge_means(top.arm2.fdr, arm2.data, "top_arm2_updated", "no")
-out.BMI2 = merge_means(top.BMI2.fdr, BMI2.data, "top_BMI2_updated", "no")
-out.ME = merge_means(ME.results, ME.data, "ME_updated", "no")
+#out.int = merge_means(top.int.fdr, int.data, "top_int_updated", "yes")
+#out.arm2 = merge_means(top.arm2.fdr, arm2.data, "top_arm2_updated", "no")
+#out.BMI2 = merge_means(top.BMI2.fdr, BMI2.data, "top_BMI2_updated", "no")
+#out.ME = merge_means(ME.results, ME.data, "ME_updated", "no")

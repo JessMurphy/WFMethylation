@@ -14,6 +14,7 @@ library(dplyr)
 
 # define a function to remove outliers
 # https://stackoverflow.com/questions/12866189/calculating-the-outliers-in-r
+
 FindOutliers <- function(data) {
   
   lowerq = quantile(data, na.rm=T)[2]

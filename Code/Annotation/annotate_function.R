@@ -1,17 +1,14 @@
 ############################################################
-##  Women First Trial: Guatemala Methylation Analysis (Birth Outcomes)        
+##  Women First Trial: Guatemala Methylation Analysis       
 ##  Written by Jessica Murphy 
 ##  Last edited on January 15, 2021
 ##  This function annotates each chromosome with overlapping & 
-##  flanking genes. The gene file was created using
-##  /nfs/storage/math/gross-s2/projects/GencodeV31/Extract_genes.R.
+##  flanking genes. The gene file was created using Extract_genes.R.
 ##  Please send any questions to jessica.murphy@ucdenver.edu
 ############################################################
 
 setwd('/nfs/storage/math/gross-s2/projects/Gencode/')
 genes <- read.table('Gencode.v31.annotation.genes.txt', header =  FALSE, sep = '\t')
-
-setwd('/nfs/storage/math/gross-s2/projects/guatemala/Guatemala-omics/Methylation/BirthOutcomes/results/')
 
 # define function to perform annotation
 # outcome: birth outcome (LGAZ, WGAZ, HCGAZ, WLGAZ)
@@ -94,8 +91,3 @@ annotate <- function(outcome){
     print(i)
   }
 }
-
-annotate("LGAZ")
-annotate("WGAZ")
-annotate("HCGAZ")
-annotate("WLGAZ")

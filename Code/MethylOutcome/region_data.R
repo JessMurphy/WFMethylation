@@ -29,6 +29,7 @@ top.BMI2 = top.BMI2.fdr %>% arrange(BMI.p2) %>% filter(BMI.fdr2 < 0.05) %>% sele
 # inputs: top - a dataframe of top results 
 #         name - a character string to name the output file
 # output: a tab-separated text file of the results within 1,000 bp of the top results
+
 region_data <- function(top, name) {
   
   # extract the chromosome numbers from the results file
