@@ -31,5 +31,5 @@
 10) region_data.R, plot_data.R
 11) scatterplots.R, region_plots.R (plots subdirectory)
 12) Prep_data.R, Comb_p_script.sh (combp subdirectory)
-13) combp_sites.sh (combp subdirectory)
+13) combp_sites.R (combp subdirectory)
 14) combp_plots.R (plots subdirectory)
