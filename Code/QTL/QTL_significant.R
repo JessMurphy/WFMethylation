@@ -13,6 +13,7 @@ setwd("/nfs/storage/math/gross-s2/projects/guatemala/Guatemala-omics/Methylation
 for (chrom in 1:22){
   
   # read in the permutation results
+  # would not recommend using data as a variable name (it's a reserved word in R)
   data = paste0("Chr", chrom, "_permutations.txt")
   d = read.table(data, header=F, stringsAsFactors=F)
   d = d[!is.na(d$V19),]
