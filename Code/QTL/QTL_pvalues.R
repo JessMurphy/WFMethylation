@@ -38,6 +38,7 @@ for (chrom in 1:22){
   d = read.table(data, head=FALSE, stringsAsFactors=FALSE)
   
   # count the number of significant sites per threshold
+  # what are these numbers you're comparing to? Might be better to assign these thresholds to variables and use the variables - would also make updating these thresholds easier
   out[chrom,] = c(length(which(d$V16<10e-5)), length(which(d$V16<10e-6)), length(which(d$V16<10e-7)),
               length(which(d$V16<10e-8)), length(which(d$V19<0.05)), length(which(d$V19<0.01)),
               length(which(d$V19<0.001)))
