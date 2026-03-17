@@ -1,6 +1,6 @@
-# Woman First DNA Methylation (Guatemala)
+# Women First DNA Methylation (Guatemala)
 
-This is the repository for the Woman First methylation analysis and results.
+This is the repository for the Women First methylation analysis and results.
 
 The two research questions of interest were:
 1) Are study arm and maternal BMI associated with infant DNA methylation at birth?
