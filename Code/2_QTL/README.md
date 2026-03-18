@@ -1,22 +1,17 @@
-# QTL Analysis
-*updated 1/25/2021*
+# Step2: QTL Analysis
 
-| **Filename**		| **Description** |
-|:----------------------|:----------------|
-| Index_bed.sh		| Sorts and zips each bed file in a bed_files directory |
-| Index_vcf.sh		| Copies the vcf files into a vcf_files directory. It also sorts and zips each vcf file in the directory. |
-| QTL_formatting.R	| Reformats the methylation data into bed format for QTLTools. It uses R data files and map files to output a bed file for each chromosome saved in the bed_files directory. |
-| QTL_pvalues.R		| Counts the number of significant CpG sites per chromosome for several p-value thresholds based on both the nominal and adjusted p-values. It produces a chromosome by threshold table as well as the nominal and adjusted QQplots for each chromosome. |
-| QTL_scripts.sh	| Generates QTL scripts for each chromosome |
-| QTL_significant.R	| Filters the significant CpG sites (adjusted p-value < 0.01) from the permutation results |	   	
-| QTL_sites.sh		| Extracts just the CpG site names from the significant QTL files |
+*updated 3/18/2026*
 
-**Workflow:**
-1) QTL_formatting.R
-2) Index_bed.sh
-3) Index_vcf.sh
-4) QTL.sh (one script per chromosome)
-5) Chr#_QTL.sh 
-6) QTL_pvalues.R (not required)
-7) QTL_significant.R
-8) QTL_sites.sh
+|**Filename**|**Description**|
+|-|-|
+|1\_QTL\_formatting.R|Reformats the methylation data into bed format for QTLTools. It uses R data files and map files to output a bed file for each chromosome saved in the bed\_files directory.|
+|2\_Index\_bed.sh|Sorts and zips each bed file in a bed\_files directory|
+|3\_Index\_vcf.sh|Copies the vcf files into a vcf\_files directory. It also sorts and zips each vcf file in the directory.|
+|4\_QTL\_scripts.sh|Generates QTL scripts for each chromosome by copying QTL.sh|
+|5\_Chr#\_QTL.sh (based off QTL.sh)|Run QTLTools for each chromosome|
+|6\_QTL\_pvalues.R|Counts the number of significant CpG sites per chromosome for several p-value thresholds based on both the nominal and adjusted p-values. It produces a chromosome by threshold table as well as the nominal and adjusted QQplots for each chromosome.|
+|7\_QTL\_significant.R|Filters the significant CpG sites (adjusted p-value < 0.01) from the permutation results|
+|8\_QTL\_sites.sh|Extracts just the CpG site names from the significant QTL files|
+
+
+
