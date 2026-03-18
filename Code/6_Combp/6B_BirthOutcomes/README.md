@@ -1,14 +1,12 @@
-# Birth Outcomes Regional Analysis
-*updated 5/8/2021*
+# Step 6B: Birth Outcomes Regional Analysis
 
-| **Filename**			| **Description** |
-|:------------------------------|:----------------|
-| Comb_p_script.sh		| Sorts the input files using Bedtools and performs the comb-p regional analysis |
-| combp_sites.R			| Merges the comb-p FDR single site results with the comb-p region results |
-| Prep_data.R			| Re-formats the single site results for comb-p and then edits the comb-p results |
+*updated 3/18/2026*
 
-**Workflow:**
-1) Prep_data.R until prompted to use Bedtools
-2) Comb_p_script.sh until prompted to return to R and finish editing
-3) Prep_data.R
-4) combp_sites.R
+|**Filename**|**Description**|
+|-|-|
+|6Ba\_prep\_data.R|Re-formats the single site results for comb-p (until prompted to use Bedtools in Step 6Bb) and then edits the comb-p results|
+|6Bb\_comb\_p\_script.sh|Sorts the input files using Bedtools and performs the comb-p regional analysis (return to Step 6Ba afterwards)|
+|6Bc\_combp\_sites.R|Merges the comb-p FDR single site results with the comb-p region results|
+
+
+
