@@ -1,15 +1,13 @@
-# Annotation
-*updated 5/8/2021*
+# Step 3: Annotation
 
-| **Filename**		| **Description** |
-|:----------------------|:----------------|
-| annotate_combp.R	| Annotates the comb-p results with overlapping and flanking genes from Gencode for both analyses |
-| annotate_function.R	| Funtion to annoate the chromosome results files with overlapping and flanking genes from Gencode (can be called for either analysis |
-| Download_code.sh	| Downloads and unzips the Gencode v31 hg38 annotation information |
-| Extract_genes.R	| Extracts the relevant gene information from the Gencode file |
+*updated 3/18/2026*
 
-**Workflow:**
-1) Download_code.sh
-2) Extract_genes.R
-3) annotate_function.R
-4) annotate_combp.R
+|**Filename**|**Description**|
+|-|-|
+|3a\_download\_code.sh|Downloads and unzips the Gencode v31 hg38 annotation information|
+|3b\_extract\_genes.R|Extracts the relevant gene information from the Gencode file|
+|3c\_annotate\_function.R|Function to annotate the chromosome results files with overlapping and flanking genes from Gencode (can be called for either analysis|
+|3d\_annotate\_combp.R|Annotates the comb-p results with overlapping and flanking genes from Gencode for both analyses|
+
+
+
