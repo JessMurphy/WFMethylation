@@ -8,5 +8,3 @@
 | interaction_plots.R		| Creates interaction plots and methylation boxplots for the top interaction results |
 | noint_qqplot.R		| Produces the QQplot for the non-interaction model (arm & BMI p-values) |
 | region_plots.R		| Creates region plots of the beta estimates and p-values for the top results |
-
-*See the Methylation Outcome Analysis directory for the workflow.*
