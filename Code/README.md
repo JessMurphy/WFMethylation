@@ -1,16 +1,12 @@
 # Methylation Analysis Pipeline
 
-| **Folder**		| **Description** |
-|:----------------------|:----------------|
-| Annotation		| Genecode gene annotation information |
-| BirthOutcomes		| Birth outcomes analysis (birth outcome ~ methylation + arm + BMI + covariates) |
-| CellTypeAdjustment	| Cellular heterogeneity adjustment using ReFACTor |
-| MethylOutcome		| Methylation outcome analysis (methylation ~ arm + BMI + arm x BMI + covariates) |
-| QTL			| QTL analysis using QTLTools (identify/remove CpG sites associated with genetic variation) |
+|**Folder**|**Description**|
+|-|-|
+|1\_CellTypeAdjustment|Cellular heterogeneity adjustment using ReFACTor|
+|2\_QTL|QTL analysis using QTLTools (identify/remove CpG sites associated with genetic variation)|
+|3\_Annotation|Genecode gene annotation information|
+|4\_MethylOutcome|Methylation outcome analysis (methylation ~ arm + BMI + arm x BMI + covariates)|
+|5\_BirthOutcomes|Birth outcomes analysis (birth outcome ~ methylation + arm + BMI + covariates)|
 
-**Workflow:**
-1) CellTypeAdjustment
-2) QTL
-3) Annotation
-4) MethylOutcome
-5) BirthOutcomes
+
+
